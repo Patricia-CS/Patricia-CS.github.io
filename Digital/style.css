@@ -1,0 +1,882 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px; 
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+h3{
+   font-size: 19px;
+   font-weight: 400; 
+   color: #2b2b2b;
+}
+h4{
+    color: #32301f;
+    font-size: 28px;
+    font-weight: 300;
+}
+h5{
+    font-size: 17px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2{
+    font-size: 50px;
+    color: #2b2b2b;
+}
+/* Elementos generales */
+.wrapper{
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.alcentro{
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo{
+    width: 100%;
+}
+.h2margen{
+    margin-bottom: 35px;
+}
+.mitad{
+    width: 50%;
+    padding: 20px;
+}
+.btn{
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;  
+    transition: 1s;
+}
+.btn.blanco{
+    border: 1px solid white;
+}
+.btn.blanco a{
+    color: white;
+    transition: 1s;
+}
+.btn.blanco:hover a{
+    color: #2b2b2b;
+}
+.btn.blanco:hover{
+    background-color: white;
+}
+.btn.gris{
+    background-color: #2b2b2b;
+}
+.btn.gris a{
+    color: white;
+    transition: 1s;
+    font-weight: 300;
+}
+.btn.gris:hover{
+    background-color: white;
+}
+.btn.gris:hover a{
+    color: #2b2b2b;
+}
+.raro{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 13%, 100% 100%, 0 87%);
+    height: 100vh;
+}
+.amarillo{
+    background-color: #e8d716;
+}
+.arriba{
+    bottom: 50px;
+}
+.abajo{
+    top: 50px;
+}
+.medioarriba{
+    bottom: 20px;
+}
+.medioabajo{
+    top: 20px;
+}
+/* Fin elementos generales */
+/* Menu hamburguesa */
+.hamburguesa{
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/* Fin menu hamburguesa */
+/* Entrada */
+.cuerpo{
+    position: relative;
+}
+.limon{
+    background-image: url("img/limon.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.redes{
+    color: white;
+    padding: 35px 0 35px;
+    justify-content: space-between;
+}
+.telf i{
+    position: relative;
+    margin-right: 4px;
+    top: 5px;
+}
+.iconred{
+    width: 13%;
+    justify-content: space-between;
+}
+/* Navegador */
+nav{
+    justify-content: space-between;
+    
+}
+.logo{
+    background-color: rgb(20, 20, 20);
+    width: 10%;
+    padding: 20px;
+}
+.home{
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+}
+.homemedia{
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.homemedia a{
+    color: rgba(0,0,0,.9);
+    font-weight: 600;
+}
+.homemedia a:not(:last-child){
+    margin-right: 30px;
+}
+.logo img{
+    width: 70px;
+}
+/* Fin navegador */
+/* Cabecera */
+.cabecera{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.make{
+    width: 80%;
+    color: #2b2b2b;
+    position: relative;
+    left: 45px;
+    bottom: 14%;
+}
+.lima{
+    background-color: #dbd527;
+    color: white;
+}
+.make .mitad:first-child{
+   text-align: right;
+}
+.make .mitad:first-child h1{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.lima span{
+    font-weight: 100;
+}
+/* Fin entrada */
+/* Servicios */
+.raro.separador{
+    height: 30vh;
+    position: absolute;
+    z-index: 2;
+    bottom: -17%;
+    left: 0;
+}
+.white{
+    background-color: white;
+    clip-path: polygon(0 0, 100% 44%, 100% 88%, 0 45%);
+}
+.servicios{
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.agency{
+    width: 30%;
+    color: white;
+    position: relative;
+    bottom: 100px;
+}
+.agency h2{
+    color: white;
+}
+.agency span{
+    color:  #2b2b2b;
+}
+.business{
+    width: 50%;
+    flex-direction: column;
+}
+.business i{
+    font-size: 120px;
+    color: white;
+    margin-bottom: 15px;
+}
+.iconagency{
+    text-align: center;
+}
+.fila{
+    width: 100%;
+    justify-content: space-between;
+}
+.fila:not(:last-child){
+    margin-bottom: 50px;
+}
+.fila:last-child{
+    position: relative;
+    left: 100px;
+}
+.stats img{
+    position: absolute;
+    top: -210px;
+    left: 0;
+    z-index: 2;
+}
+/* Fin servicios */
+/* Stats */
+.stats{
+    padding: 120px 0 120px;
+    position: relative;
+}
+.derecha{
+    width: 100%;
+    justify-content: flex-end;
+}
+.facts{
+    width: 60%;
+    text-align: right;
+}
+.facts h3{
+    color: #5bbdbb;
+}
+.facts h2{
+    font-size: 60px;
+}
+.barra{
+    width: 95%;
+    background-color: rgb(226, 226, 226);
+    height: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.barras p{
+    margin-bottom: 15px;
+}
+.barraverde{
+    height: 16px;
+    background-color:  #dbd527;
+    border-radius: 5px;
+}
+.siete .barraverde{
+    width: 79%;
+}
+.ocho .barraverde{
+    width: 87%;
+}
+.nueve .barraverde{
+    width: 95%;
+}
+.cinco .barraverde{
+    width: 57%;
+}
+.porciento{
+    background-color:  #2b2b2b;
+    padding: 2px 5px 2px;
+    position: absolute;
+    bottom: 120%;
+    border-radius: 5px;
+}
+.porciento p{
+    margin: 0;
+    color: white;
+    font-size: 13px;
+}
+.siete .porciento{
+    left: 75%;
+}
+.ocho .porciento{
+    left: 83%;
+}
+.nueve .porciento{
+    left: 91%;
+}
+.cinco .porciento{
+    left: 53%;
+}
+/* Fin stats */
+/* Equipo */
+.negro{
+    background-color:  #2b2b2b;
+}
+.equipo{
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.equipo h2, h3{
+    color: white; 
+}
+.creative{
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 70px;
+}
+.fotos{
+    justify-content: space-around;   
+}
+.foto{
+    position: relative;
+}
+.foto h3{
+    text-align: center;
+    font-size: 27px;
+}
+.foto img{
+    background-color: #dbd527;
+    border-radius: 200px;
+    width: 250px;
+    margin-bottom: 15px;
+}   
+
+/* Fin equipo */
+/* Portfolio */
+.design{
+    flex-wrap: wrap;
+}
+.cuadrado{
+    width: 45%;
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+li{
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.cuadrado img{
+    width: 100%;
+    transition: 0.5s;
+}
+.filtro{
+    width: 95%;
+    height: 95%;
+    background-color: #dbd52700;
+    position: absolute;
+    top: 2%;
+    left: 2.6%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.texto{
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    z-index: 3;
+}
+.texto h3{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+.texto p{
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+.cruz{
+    background-color: rgba(255, 255, 255, 0);
+    width: 60px;
+    height: 3px;
+    transition: 0.5s;
+}
+.vertical{
+    transform: rotate(90deg);
+}
+.cuadrado:hover img{
+    transform: scale(1.3);
+}
+.cuadrado:hover .filtro{
+ background-color: #dbd527c0;
+}
+.cuadrado:hover .cruz{
+    background-color: white;
+}
+.cuadrado:hover p, .cuadrado:hover h3{
+    color: white;
+}
+.especial{
+    margin-left: 40px;
+    position: relative;
+    bottom: 160px;
+}
+.contbtn{
+    width: 100%;
+    justify-content: flex-end;
+}
+.btntexto{
+    align-items: center;
+    width: 45%;
+    justify-content: space-between;
+    position: relative;
+    right: 5%;
+    bottom: 150px;
+}
+.btntexto p{
+    margin: 0;
+}
+.azul{
+    background-color: #5bbdbb;
+}
+.azul a{
+    color: white;
+}
+.azul:hover{
+    background-color: #2b2b2b;
+}
+/* Fin portfolio */
+/* Customers */
+.customers .mitad{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.customers span{
+    color: white;
+}
+.customers .mitad img{
+    border-radius: 80px;
+    margin-bottom: 20px;
+}
+.customers .mitad i{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+.customers .mitad h4{
+   font-size: 18px;
+   font-weight: 400;
+}
+.customers{
+    height: 100%;
+}
+.customers .flex{
+    height: 100%;
+}
+.customers .mitad:first-child{
+    margin-right: 30px;
+}
+.satisfied{
+    position: relative;
+    top: 20%;
+}
+/* Fin customers */
+/* Envato */
+.envato{
+    flex: 1;
+    padding: 50px;
+    position: relative;
+}
+.envato img{
+    width: 100%;
+}
+.contenv{
+    padding: 170px 0 170px 0;
+}
+/* Fin Envato */
+/* Blog */
+.blog{
+    height: 100%;
+}
+.blog h2, .blog p{
+    color: white;
+}
+.blog .mitad{
+    position: relative;
+}
+.blog span{
+    color: #dbd527;
+}
+.pantalla{
+    position: relative;
+}
+.pantalla img{
+    width: 100%;
+}
+.pantalla .imgcont{
+    width: 84%;
+    position: absolute;
+    top: 8%;
+    left: 9%;
+}
+/* Fin blog */
+/* Formulario */
+.formulario h2{
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.location p {
+    font-weight: 200;
+    color: #202020;
+}
+.location .flex p{
+    margin: 0;
+}
+.mitad input{
+    width: 100%; 
+    padding: 15px;
+}
+form.alcentro{
+    height: 180px;
+    justify-content: space-between;
+}
+.mitad textarea{
+    width: 100%; 
+    padding: 15px;
+   height: 100%;
+}
+form .mitad{
+    padding: 0px;
+    height: 100%;
+    width: calc(50% - 10px);
+}
+.formulario .mitad.flex{
+    flex-direction: column;
+    justify-content: space-between;
+}
+input, textarea{
+    border: 2px solid rgb(225, 236, 236);
+}
+::placeholder{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(160, 170, 170);
+}
+.formulario .btn{
+    width: 100%;
+    background-color: #e8d716;
+    text-align: center;
+    transition: 1s;
+}
+.formulario .btn:hover{
+    background-color: #202020;
+}
+.formulario .btn a{
+    color: white;
+}
+form{
+    margin-bottom: 15px;
+}
+.location{
+    padding: 23px 70px 23px;
+}
+.location div:not(:last-child){
+    margin-bottom: 24px;
+}
+.location i {
+    color: lightblue;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.formulario{
+    margin-bottom: 50px;
+}
+/* Fin formulario */
+/* Final */
+.final{
+    justify-content: space-between;
+}
+.final .iconred{
+    width: 25%;
+}
+.final p{
+    font-size: 14px;
+    font-weight: 200;
+}
+/* Fin final */
+/* Desplegable */
+.oculto{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    bottom: -100vh;
+    transition: 1s;
+}
+.ocultonegro{
+    width: 100%;
+    height: 100%;
+    background-color: #2b2b2b;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    position: relative;
+}
+.ex{
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    z-index: 2;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.navoculto img{
+    width: 90px;
+    margin-bottom: 60px;
+}
+.homeoculto a{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+}
+.homeoculto{
+    width: 43%;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.navoculto .iconred{
+    color: white;
+}
+.navoculto{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    bottom: 150px;
+}
+/* Fin desplegable */
+/* JQuery */
+.desplegar{
+    bottom: 0vh;
+}
+.desaparece{
+    opacity: 0;
+}
+@media (max-width: 1380px){
+    .wrapper{
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1189px){
+    .wrapper{
+        max-width: 800px;
+    }
+    .cuadrado{
+        width: 100%;
+        margin: 0;
+    }
+    .especial{
+        bottom: 0;
+    }
+    .contbtn{
+        justify-content: center;
+    }
+    .btntexto{
+        padding: 40px;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    .imgcont{
+        left: 12%;
+    }
+}
+@media (max-width: 970px){
+    .wrapper{
+        max-width: 700px;
+    }
+    .logo{
+        width: 15%;
+    }
+    .home{
+        width: 85%;
+    }
+    .homemedia{
+        display: none;
+    }
+    .hamburguesa{
+        color: #202020;
+        top: 12.5%;
+    }
+    .cabecera{
+        justify-content: center;
+    }
+    .make{
+        width: 80%;
+        flex-direction: column;
+        left: 0;
+    }
+    .make .mitad:first-child{
+        text-align: center;
+    }
+    .mitad{
+        width: 100%;
+        text-align: center;
+    }
+    .agency{
+        width: 100%;
+        bottom: 0;
+        top: 5%;
+        text-align: center;
+    }
+    .business{
+        width: 80%;
+    }
+    .servicios{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fila:last-child{
+        left: 0;
+    }
+    .stats img{
+        display: none;
+    }
+    .raro.amarillo{
+        height: 110vh;
+    }
+    .business i{
+        font-size: 100px;
+    }
+    .business h4{
+        font-size: 24px;
+    }
+    .facts{
+        text-align: center;
+        width: 80%;
+    }
+    .derecha{
+        justify-content: center;
+    }
+    .barras{
+        flex-direction: column;
+    }
+    .foto.arriba, .foto.abajo{
+        display: none;
+    }
+    .creative{
+        text-align: center;
+    }
+    .satisfied{
+        text-align: center;
+        top: 16%;
+    }
+    .envato.arriba, .envato.abajo{
+        display: none;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .customers .mitad.abajo{
+        display: none;
+    }
+    .blog .mitad{
+        top: 0;
+        bottom: 0;
+    }
+    .blog .mitad.abajo{
+        width: 80%;
+    }
+    .formulario{
+        flex-direction: column;
+    }
+    .final{
+        flex-direction: column;
+    }
+       
+}
+@media (max-width: 600px){
+    .wrapper{
+        max-width: 500px;
+    }
+    .iconred{
+        width: 20%;
+    }
+    .btn.gris{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 400px){
+    .wrapper{
+        max-width: 360px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .hamburguesa{
+        top: 17%;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .mitad{
+        padding: 10px;
+    }
+    .make .mitad:first-child h1 {
+        margin-top: 0;
+    }
+    .make p {
+        margin-bottom: 1em;
+        font-size: 14px;
+    }
+    .make{
+        position: relative;
+        bottom: 120px;
+    }
+    .raro{
+        height: 130vh;
+    }
+    .raro.amarillo{
+        height: 135vh;
+    }
+    .agency{
+        top: 0;
+    }
+    .business i{
+        font-size: 50px;
+    }
+    .stats{
+        padding: 0;
+    }
+    .creative{
+        margin-bottom: 0;
+    }
+    .homeoculto{
+        width: 100%;
+        padding: 1em;
+    }
+    .homeoculto a {
+        font-size: 17px;
+    }
+}

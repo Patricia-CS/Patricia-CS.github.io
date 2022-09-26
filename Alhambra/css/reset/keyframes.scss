@@ -1,0 +1,9 @@
+// Añade los keyframes para los animation que necesites en este archivo
+@keyframes rellenar {
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+ }

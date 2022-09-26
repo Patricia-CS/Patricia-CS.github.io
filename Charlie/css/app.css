@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style: none;
+}
+
+form, input, select, option, textarea, button, label {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  display: block;
+}
+
+video {
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+audio {
+  display: flex;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  background-color: #292929;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.fondo.ver {
+  opacity: 1;
+}
+
+ul {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 6em;
+}
+@media (max-width: 800px) {
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 400px) {
+  ul {
+    padding-left: 3em;
+  }
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 1.5em;
+}
+@media (max-width: 800px) {
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.li__h2.azul {
+  color: #c0fce8;
+}
+
+.li__h2.transparente {
+  opacity: 0.5;
+}
+
+.li__h2 {
+  font-size: 190%;
+  font-weight: 700;
+  margin-right: 0.2em;
+  cursor: pointer;
+}
+
+.li__p {
+  font-size: 80%;
+  font-style: italic;
+}
