@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+    color: #1d1d1d;
+}
+h1{
+    font-size: 70px;
+    color: white;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+h5{
+    font-weight: 300;
+    font-size: 12px;
+}
+a{
+   text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* Elementos generales */
+.wrapper{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex; 
+}
+/* Fin elementos generales */
+/* Navegador */
+nav{
+    padding: 40px 40px 0 40px;
+    justify-content: space-between;
+}
+nav img{
+    margin-bottom: 40px;
+}
+.menu{
+    align-items: center;
+}
+.menu a{
+    margin-right: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.menu a:hover{
+    color: lightgrey;
+}
+nav.wrapper i{
+    display: none;
+}
+.ancho{
+    padding-bottom: 40px;
+}
+/* Fin navegador */
+/* Cabecera */
+.cabecera{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/soul1.jpg');
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    background-size: cover;
+}
+/* Fin Cabecera */
+/* Menu hamburguesa */
+.listas{
+    background-color: rgb(19, 19, 19);
+    position: absolute; 
+    padding: 15px;
+    display: none;
+    top: 90px;
+}
+.listas li{
+    color: white;
+    padding: 5px;
+}
+.short:hover .listas{
+    display: block;
+}
+.tecno:hover .listas{
+    display: block;
+}
+.careers:hover .listas{
+    display: block;
+}
+.extras:hover .listas{
+    display: block;
+}
+.about:hover .listas{
+    display: block;
+}
+.desplegable{
+    width: 95%;
+    height: 100vh;
+    padding: 30px;
+    position: fixed;
+    left: -100%;
+    background-color: white;
+    z-index: 100000;
+    transition: 1s;
+}
+.desplegable.move{
+   top: 0;
+   left: 0;
+}
+.desplegable li{
+    padding: 10px;
+}
+.X{
+    position: absolute;
+    top: 0;
+    right: -5%;
+    padding: 15px;
+    background-color: white;
+}
+.X i{
+    font-size: 35px;
+}
+/* Fin menu hamburguesa */
+/* Cabecera Films */
+.cabecera.films{
+    background-image: url('img/cabecera.jpg');
+    height: 95vh;
+    background-size: cover;
+}
+/* Fin cabecera Films */
+/* Pelis Films */
+.caja{
+    flex-wrap: wrap;
+}
+.pelis{
+    width: 32%;
+    text-align: center;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+.pelis img{
+    width: 190px;
+    margin-bottom: 20px;
+}
+/* Fin Pelis Films */
+/* Apartados */
+.apartados{
+    padding: 0 0 100px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 31%;
+    text-align: center;
+}
+.box:not(:last-child){
+    margin-right: 25px;
+}
+.box img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+/* Fin apartados */
+/* Redes */
+.redes{
+    width: 100%;
+    padding: 80px;
+    justify-content: center;
+}
+.redes i{
+    font-size: 27px;
+}
+.redes i:not(:last-child){
+    margin-right: 15px;
+}
+/* Fin redes */
+/* Politica */
+.politica{
+    max-width: 500px; 
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.politica a{
+    margin-right: 5px;
+    border-bottom: 1px solid  #1d1d1d;
+    font-size: 17px;
+    font-weight: 300;
+}
+/* Fin politica */
+@media (max-width: 1130px){
+    .wrapper{
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 900px){
+    .wrapper{
+        max-width: 700px;
+    }
+    .menu{
+        display: none;
+    }
+    nav.wrapper i{
+        display: block;
+        font-size: 25px;
+    }
+    .wrapper.flex div.box{
+        width: 100%;
+        margin-right: 0;
+    }
+    .box h2{
+        margin-bottom: 50px;
+    }
+    .apartados{
+        padding: 0 15px 0 15px;
+    }
+}
+@media (max-width: 740px){
+    .cabecera img{
+        width: 400px;
+    }
+    .pelis img{
+       width: 130px;
+    }
+}

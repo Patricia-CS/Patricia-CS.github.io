@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    font-size: 13px;
+    color:  rgb(145, 145, 145);
+}
+li{
+    padding: 4px;
+}
+img{
+    width: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex a:not(:last-child){
+    margin-right: 30px;
+}
+.column{
+    flex-direction: column;
+}
+.alcentro{
+    justify-content: center;
+    align-items: center;
+}
+.col h1{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.col{
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+}
+.cabecera .row .col{
+    padding: 0;
+}
+.container{
+    margin-bottom: 20px;
+}
+.container-fluid{
+    margin-bottom: 40px;
+}
+.largos img{ 
+    width: 150%;
+}
+.cabecera.container-fluid{
+    margin-bottom: 20px;
+}
+.cabecera h2{
+    font-size: 60px;
+}
+.cabecera .arriba p{
+    font-size: 30px;
+    font-weight: 200;
+}
+.uno{
+    margin-left: 10px;
+}
+.dos{
+    margin: 0 10px 0 10px;
+}
+.letra{
+    position: absolute;
+    color: white;
+     text-align: center;
+     margin: 50px 0 50px;
+
+ }
+ .abajo{
+     bottom: 0; 
+ }
+ .arriba{
+     top: 0;
+ }
+ .letra h3{
+     font-size: 40px;
+ }
+ .letra p{
+     font-size: 20px;
+ }
+ .cajas{
+     margin-bottom: 10px;
+ }
+ .letra.medio{
+     color: black;
+ }
+ .blanco a{
+     color: white;
+ }
+ .blanco a:hover{
+     color: white;
+ }
+ .gris{
+     background-color: rgb(241, 241, 241);
+ }
+ .terminos{
+     padding: 15px 0 15px 0;
+     border-bottom:1px solid rgb(207, 206, 206);
+ }
+ .terminos p{
+     font-size: 13px;
+     color: rgb(145, 145, 145);
+     font-weight: 100;
+ }
+ span{
+     font-weight: 500;
+     color: rgb(53, 53, 53);
+ }
+ .gris .row{
+    margin-bottom: 20px;
+ }
+ .fin p{
+    font-size: 13px;
+    color: rgb(145, 145, 145);
+    font-weight: 100;
+ }
+@media (max-width: 1360px){
+    .cabecera .arriba a{
+        font-size: 15px;
+    }
+    .cabecera h2{
+        font-size: 50px;
+    }
+    .cabecera h5{
+        font-size: 20px;
+    }
+    .cabecera .arriba p{
+        font-size: 20px;
+    }
+    .letra h3{
+        font-size: 30px;
+    }
+    .letra p{
+        font-size: 15px;
+    }
+    .letra a{
+        font-size: 12px;
+    }
+}
+@media (max-width: 980px){
+    .letra{
+        margin: 10px 0 10px;
+    }
+    .cabecera .largos img{
+        width: 200%;
+    }
+}
+@media (max-width: 800px){
+    .cabecera .largos img{
+        width: 255%;
+    }
+    .cabecera .arriba a{
+        font-size: 15px;
+    }
+    .cabecera h2{
+        font-size: 40px;
+    }
+    .cabecera h5{
+        font-size: 15px;
+    }
+    .cabecera .arriba p{
+        font-size: 15px;
+    }
+    .none{
+        display: none;
+    }
+    .cajas .col{
+        min-width: 380px;
+    }
+    .row .cajas{
+        flex-wrap: wrap;
+    }
+    .dos, .uno{
+        margin: 0 0 10px 0;
+    }
+}

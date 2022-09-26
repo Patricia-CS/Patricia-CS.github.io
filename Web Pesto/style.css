@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+h2{
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+h2, h3, h4, a{
+    color: #47475b;
+}
+p{
+    color: #90909b;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+span{
+    font-style: italic;
+}
+/* Elementos generales */
+.wrapper{
+    max-width: 1150px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    width: 100%;
+}
+.alcentro{
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    border: 1px solid white;
+    padding: 15px 60px;
+    transition: 0.5s;
+}
+.btn:hover{
+    padding: 15px 90px;
+}
+.flecha{
+    width: 50px;
+    transition: 0.5s;
+    position: relative;
+    top: 0;
+}
+.flecha:hover{
+    top: 10px;
+}
+.barrita{
+    width: 50px;
+    height: 50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+.barrita.centrado{
+    margin: 0 auto 50px auto;
+}
+.barrita.negra{
+    border-bottom: 1px solid  #47475b;
+    height: 100px;
+}
+.spaceb{
+    justify-content: space-between;
+}
+.filtro{
+    background-color: rgba(27, 27, 27, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.1s;
+}
+.dentro{
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 40px 70px 40px;
+    width: 100%;
+}
+/* Fin elementos generales */
+/* Cabecera */
+.cuerpo{
+    width: 100%;
+    height: 100vh;
+}
+.cabecera{
+    width: 95%;
+    height: 93vh;
+    background-image: url('img/bocata.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    color: white;
+}
+.tel{
+    margin-bottom: 100px;
+    text-align: center;
+    font-style: italic;
+    font-size: 26px;
+}
+.tel p{
+    color: white;
+}
+.blanco a{
+    color: white;
+}
+/* Fin Cabecera */
+/* Welcome */
+.welcome{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.welcome p{
+    margin-bottom: 50px;
+}
+/* Fin Welcome */
+/* Fotos */
+.mitad{
+     width: 45%; 
+     position: relative;
+     overflow: hidden;
+}
+.mitad .filtro{
+    z-index: 3;
+}
+.mitad img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.dos:not(:last-child){
+    margin-bottom: 95px;
+}
+.dos{
+    margin-right: 43px;
+    position: relative;
+    overflow: hidden;
+}
+.cafe:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.cafe:hover img{
+    transform: scale(1.2);
+}
+.cocina:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.cocina:hover img{
+    transform: scale(1.2);
+}
+.pollo:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.pollo:hover img{
+    transform: scale(1.2);
+}
+/* Fin fotos */
+/* Our passion */
+.pasion{
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.flech{
+    margin-bottom: 100px;
+}
+/* Fin our passion */
+/* Comida */
+.col{
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    transition: 0.4s;
+}
+.salmon .dentro{
+    padding: 100px 40px 100px 40px; 
+}
+.arroz .dentro{
+    padding: 100px 40px 100px 40px; 
+}
+.dentro h2{
+    color: white;
+    font-size: 60px;
+}
+.dentro h3{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+.dentro p{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.salmon:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.salmon:hover img{
+    transform: scale(1.2);
+}
+.arroz:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.arroz:hover img{
+    transform: scale(1.2);
+}
+/* Fin Comida */
+/* Carta */
+.menu{
+    margin-bottom: 60px;
+}
+.menu li{
+    font-size: 20px;
+    font-weight: 700;
+    color: #90909b;
+    cursor: pointer;
+}
+.menu li:hover{
+    color: #47475b;
+}
+.menu li.activo{
+    color: #47475b;
+}
+.separador{
+    width: 20px;
+    height: 2px;
+    background-color: rgba(71,71,91,.2);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.carta.activo{
+    display: flex;
+}
+.carta{
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    display: none;
+}
+.carta >div{
+    width: 45%;
+    margin-bottom: 30px;
+}
+.carta div p{
+    font-size: 24px;
+}
+.btn.negro{
+    border: 1px solid #47475b;
+}
+.negro{
+    margin-bottom: 70px;
+}
+/* Fin carta */
+/* Comida2 */
+.comida{
+    margin-bottom: 20px;
+}
+.tomate{
+    margin-right: 20px;
+}
+.comida .col{
+    flex: 1;
+}
+.subfila{
+    position: relative;
+    overflow: hidden;
+}
+.subfila:not(:last-child){
+    margin-bottom: 20px;
+}
+.subfila div h2{
+    font-weight: 400;
+}
+.tomate:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.tomate:hover img{
+    transform: scale(1.2);
+}
+.montado:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.montado:hover img{
+    transform: scale(1.2);
+}
+.postre:hover .filtro{
+    background-color:  rgba(27, 27, 27, 0.473);
+}
+.postre:hover img{
+    transform: scale(1.2);
+}
+/* Fin Comida2 */
+/* Formulario */
+.formulario{
+    flex-direction: column;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+input, select{
+    outline: none;
+    border: 1px solid  #bbbbbb;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 20px;
+}
+.subapartado select, .subapartado input{
+    width: 28%; 
+}
+.subapartado{
+    justify-content: space-between;
+}
+button{
+    border: 1px solid  #47475b;
+    font-size: 20px;
+    padding: 15px 60px;
+    transition: 0.5s;
+    background-color: transparent;
+}
+button:hover{
+    padding: 15px 90px;
+}
+/* Fin Formulario */
+@media (max-width: 850px){
+    .wrapper{
+        max-width: 750px;
+    }
+    .mitad{
+        width: 100%;
+    }
+    .flex{
+        flex-wrap: wrap
+    }
+    .dos{
+        margin-right: 0;
+    }
+    .dos:first-child{
+        margin-bottom: 50px;
+    }
+    .dos{
+        margin-bottom: 50px;
+    }
+    .col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .comida .col{
+        flex: none;
+    }
+}
+@media (max-width: 550px){
+    .wrapper{
+        max-width: 450px;
+    }
+    .cabecera{
+        text-align: center;
+    }
+    .menu li{
+        font-size: 15px;
+    }
+    .carta >div{
+        width: 100%;
+    }
+    form{
+        width: 350px;
+    }
+}
+@media (max-width: 400px){
+    .wrapper{
+        max-width: 350px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .formulario{
+        padding: 0;
+    }
+}
